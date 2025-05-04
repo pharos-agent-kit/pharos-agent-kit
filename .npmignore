@@ -1,0 +1,32 @@
+# Source files
+src/
+
+# Test files
+test/
+
+# Development configs
+.env*
+.eslintrc
+.gitignore
+.husky/
+.lintstagedrc
+.prettierignore
+.prettierrc
+ls.vitest.config.ts
+tsconfig.json
+
+# Documentation and guides
+guides/
+
+# Development dependencies
+node_modules/
+
+# Build artifacts
+dist/test/
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
