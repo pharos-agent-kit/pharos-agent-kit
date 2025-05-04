@@ -1,70 +1,98 @@
 <div align="center">
 
-# Pharos Agent Kit
+# 🌟 Pharos Agent Kit
 
 ![Pharos Agent Kit](pharos-agent-kit.png)
 
+---
+
+### 🤖 Empowering AI Agents with Blockchain Capabilities 🔗
+
 </div>
 
-An open-source toolkit for connecting AI agents to Pharos protocols. Now, any agent, using any model can autonomously perform various Pharos actions:
 
-- Check ETH balance
-- Check ERC20 token balances
-- Transfer ETH or ERC20 tokens
-- Get token pricing data
-- Fetch trending tokens
-- Monitor market movements
-- Access DeFi protocols
-- And more...
+> 🚀 An open-source toolkit for connecting AI agents to Pharos protocols. Now, any agent, using any model can autonomously perform various Pharos actions:
 
-Anyone - whether an SF-based AI researcher or a crypto-native builder - can bring their AI agents trained with any model and seamlessly integrate with Pharos blockchain.
+
+### ✨ Key Features
+
+- 💰 Check ETH balance
+- 🔄 Check ERC20 token balances
+- 💸 Transfer ETH or ERC20 tokens
+- 📊 Get token pricing data
+- 📈 Fetch trending tokens
+- 📉 Monitor market movements
+- 🏦 Access DeFi protocols
+- 🎯 And more...
+
+
+---
+
+> 🌐 Anyone - whether an SF-based AI researcher or a crypto-native builder - can bring their AI agents trained with any model and seamlessly integrate with Pharos blockchain.
+
 
 ## 🔧 Core Blockchain Features
 
-- **Token Operations**
-  - Check ERC20 token balances
-  - Transfer ERC20 tokens
+### 💎 Token Operations
 
-- **Market Data Integration**
-  - CoinGecko Pro API integration
-  - Real-time token price data
-  - Trending tokens and pools
-  - Top gainers analysis
-  - Token information lookup
+- 💳 Check ERC20 token balances
+- 💱 Transfer ERC20 tokens
 
-- **DeFi Data Access**
-  - Protocol TVL tracking with DeFiLlama
-  - Price feeds and aggregation
-  - Token trading data
 
-- **Social Data**
-  - Elfa AI social media insights
-  - Trending tokens by social activity
-  - Smart mentions tracking
-  - Social account analysis
+### 📊 Market Data Integration
+
+- 🦎 CoinGecko Pro API integration
+- ⚡ Real-time token price data
+- 📈 Trending tokens and pools
+- 🚀 Top gainers analysis
+- 🔍 Token information lookup
+
+
+### 🏦 DeFi Data Access
+
+- 📊 Protocol TVL tracking with DeFiLlama
+- 💹 Price feeds and aggregation
+- 📉 Token trading data
+
+
+### 🌐 Social Data
+
+- 🤖 Elfa AI social media insights
+- 📊 Trending tokens by social activity
+- 📱 Smart mentions tracking
+- 👥 Social account analysis
+
 
 ## 🤖 AI Integration Features
 
-- **LangChain Integration**
-  - Ready-to-use LangChain tools for blockchain operations
-  - DynamicStructuredTool-based implementation
-  - Zod schema validation
-  - Comprehensive error handling
+### 🔗 LangChain Integration
 
-- **Vercel AI SDK Integration**
-  - Vercel AI SDK for AI agent integration
-  - Framework agnostic support
-  - Quick and easy toolkit setup
+- 🛠️ Ready-to-use LangChain tools for blockchain operations
+- 🎯 DynamicStructuredTool-based implementation
+- ✅ Zod schema validation
+- 🛡️ Comprehensive error handling
 
-- **MCP Integration**
-  - Support for the Model Context Protocol
-  - Action-based architecture
-  - Structured schema definitions
 
-- **AI Tools**
-  - DALL-E integration for image generation
-  - Natural language processing for blockchain commands
-  - Price feed integration for market analysis
+### 🚀 Vercel AI SDK Integration
+
+- 🔌 Vercel AI SDK for AI agent integration
+- 🌐 Framework agnostic support
+- ⚡ Quick and easy toolkit setup
+
+
+### 📡 MCP Integration
+
+- 🤝 Support for the Model Context Protocol
+- 🏗️ Action-based architecture
+- 📝 Structured schema definitions
+
+
+### 🎨 AI Tools
+
+- 🎨 DALL-E integration for image generation
+- 🗣️ Natural language processing for blockchain commands
+- 📊 Price feed integration for market analysis
+
 
 ## 📦 Installation
 
@@ -72,7 +100,7 @@ Anyone - whether an SF-based AI researcher or a crypto-native builder - can brin
 npm install pharos-agent-kit
 ```
 
-## Quick Start
+## 🚀 Quick Start
 
 ```typescript
 import { PharosAgentKit, createPharosTools } from "pharos-agent-kit";
@@ -88,16 +116,16 @@ const agent = new PharosAgentKit(
 const tools = createPharosTools(agent);
 ```
 
-## Usage Examples
+## 📚 Usage Examples
 
-### Check ERC20 Token Balance
+### 💰 Check ERC20 Token Balance
 
 ```typescript
 const balance = await agent.getBalance("0x1234567890123456789012345678901234567890");
 console.log("Token Balance:", balance);
 ```
 
-### Transfer ERC20 Tokens
+### 💸 Transfer ERC20 Tokens
 
 ```typescript
 const txHash = await agent.transfer(
@@ -109,7 +137,7 @@ console.log("Transfer Transaction:", txHash);
 ```
 
 
-### Get Token Price Data from CoinGecko
+### 📊 Get Token Price Data from CoinGecko
 
 ```typescript
 const priceData = await agent.getTokenPriceDataUsingCoingecko(
@@ -119,25 +147,25 @@ const priceData = await agent.getTokenPriceDataUsingCoingecko(
 console.log("Token prices:", priceData);
 ```
 
-### Get Trending Tokens
+### 📈 Get Trending Tokens
 
 ```typescript
 const trendingTokens = await agent.getTrendingTokens();
 console.log("Trending tokens:", trendingTokens);
 ```
 
-### Get Protocol TVL from DeFiLlama
+### 📊 Get Protocol TVL from DeFiLlama
 
 ```typescript
 const tvl = await agent.fetchProtocolTvl("uniswap");
 console.log("Uniswap TVL:", tvl);
 ```
 
-### Creating a New Tool
+### 🛠️ Creating a New Tool
 
 Here's a complete example of creating a new tool in Pharos Agent Kit:
 
-#### 1. Create the Tool
+#### 1️⃣ Create the Tool
 
 **`src/tools/my_tool/my_function.ts`**:
 ```typescript
@@ -168,7 +196,7 @@ export async function my_function(
 export * from "./my_function";
 ```
 
-#### 2. Create a LangChain Tool
+#### 2️⃣ Create a LangChain Tool
 
 **`src/langchain/my_tool/my_tool.ts`**:
 ```typescript
@@ -209,7 +237,7 @@ export class MyTool extends Tool {
 }
 ```
 
-#### 3. Create an Action
+#### 3️⃣ Create an Action
 
 **`src/actions/my_tool/my_action.ts`**:
 ```typescript
@@ -252,7 +280,7 @@ export const myAction: Action = {
 };
 ```
 
-#### 4. Add to Agent
+#### 4️⃣ Add to Agent
 
 **`src/agent/index.ts`**:
 ```typescript
@@ -266,25 +294,42 @@ export class PharosAgentKit {
   }
 }
 ```
+---
+## ⭐ Acknowledgments
 
-## Dependencies
+🌟 Special thanks to the Solana Agent Kit team for their pioneering work in blockchain agent development. Their innovative approach has been a significant source of inspiration for this project. While we've developed our own unique implementation for the Pharos ecosystem, their groundbreaking work helped shape our vision.
+
+## 🙏 Credits
+
+We extend our heartfelt gratitude to:
+
+- 👥 Our amazing community of contributors
+- 🔧 Open-source maintainers of our dependencies
+- 🚀 Early adopters and testers
+- 💡 Everyone who provided valuable feedback and suggestions
+
+Your support and contributions have been instrumental in making this project better.
+
+---
+
+## 📚 Dependencies
 
 The toolkit relies on several key libraries:
 
-- viem for blockchain interactions
-- @langchain/core for AI agent tools
-- zod for schema validation
-- CoinGecko API for market data
+- 🔧 viem for blockchain interactions
+- 🤖 @langchain/core for AI agent tools
+- ✅ zod for schema validation
+- 🦎 CoinGecko API for market data
 
-## Contributing
+## 👥 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+🤝 Contributions are welcome! Please feel free to submit a Pull Request.
 Refer to [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on how to contribute to this project.
 
-## License
+## 📄 License
 
 Apache-2 License
 
-## Security
+## 🔒 Security
 
-This toolkit handles private keys and transactions. Always ensure you're using it in a secure environment and never share your private keys.
+🛡️ This toolkit handles private keys and transactions. Always ensure you're using it in a secure environment and never share your private keys.
